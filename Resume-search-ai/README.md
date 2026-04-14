@@ -30,7 +30,6 @@ resume-search-ai/
 ├── app.py
 ├── requirements.txt
 ├── README.md
-└── demo.png
 ```
 
 ---
@@ -40,7 +39,6 @@ resume-search-ai/
 * 🧩 **app.py** – Main program for embeddings and search
 * 📦 **requirements.txt** – Required libraries
 * 📘 **README.md** – Documentation
-* 🖼️ **demo.png** – Example output
 
 ---
 
