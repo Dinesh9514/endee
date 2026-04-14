@@ -1,131 +1,76 @@
 
+AI Resume Search
 
-🚀 AI Resume Search using Vector Embeddings
+Overview
 
-📌 Project Overview
+AI Resume Search is a simple Artificial Intelligence project that demonstrates how vector search can be used to find relevant resumes based on a user query. The system converts resume text into vector embeddings and stores them in a FAISS vector database. When a query is entered, the system compares the query embedding with stored embeddings to find the most relevant resumes.
 
-This project demonstrates a simple AI-powered resume search system using vector embeddings and similarity search.
-The system converts resumes into numerical vectors and stores them in a vector index. When a user enters a query (for example, "AI Engineer"), the system finds the most relevant resumes using semantic similarity.
+This project is designed to showcase the basic concept of semantic search using modern AI techniques.
 
-This project showcases the core concept used in modern AI search systems such as semantic search, recommendation systems, and retrieval-augmented AI.
+---
 
+Features
 
+- Convert resumes into vector embeddings using Sentence Transformers
+- Store embeddings in a FAISS vector database
+- Perform semantic search on resumes
+- Retrieve the most relevant resumes based on a query
+- Fast similarity search using vector distance
+- Simple and beginner-friendly implementation
 
+---
 
+Project Structure
 
+resume-search-ai/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+└── demo.png
 
-🎯 Features
+File Description
 
-Convert text data into vector embeddings
+- app.py – Main program that generates embeddings and performs the search
+- requirements.txt – Contains the required Python libraries
+- README.md – Documentation of the project
+- demo.png – Screenshot showing example output
 
-Store embeddings in a vector database
+---
 
-Perform semantic similarity search
+Technologies Used
 
-Retrieve the most relevant results based on meaning instead of keywords
+- Python
+- Sentence Transformers
+- FAISS (Facebook AI Similarity Search)
+- NumPy
 
-Simple and lightweight implementation using Python
+These tools help convert text into embeddings and perform efficient similarity search.
 
+---
 
+Installation
 
+Clone the repository and move into the project folder.
 
-
-
-
-🧠 Vector Search Concept
-
-Traditional search relies on keyword matching, which often misses context.
-
-This project uses vector embeddings where:
-
-1. Text documents are converted into numerical vectors.
-
-
-2. These vectors represent semantic meaning.
-
-
-3. Similar texts produce vectors that are close in vector space.
-
-
-4. A vector search index retrieves the nearest vectors for a given query.
-
-
-
-This allows the system to find semantically similar results even if exact keywords are not present.
-
-Example:
-
-Query:
-
-AI Engineer
-
-Result:
-
-Python developer with machine learning experience
-
-Even though the words are different, the meaning is similar, so it gets retrieved.
-
-
-
-
-
-
-
-🛠️ Technologies Used
-
-Python
-
-Sentence Transformers
-
-FAISS (Facebook AI Similarity Search)
-
-NumPy
-
-
-
-
-
-
-
-📂 Project Structure
-
-endee/
-   ai-resume-search/
-       app.py
-       requirements.txt
-       README.md
-
-
-
-
-
-
-
-⚙️ Installation
-
-Clone the repository:
-
-git clone https://github.com/YOUR_USERNAME/endee.git
-
-Navigate to the project folder:
-
-cd endee/ai-resume-search
+git clone https://github.com/yourusername/endee.git
+cd endee/resume-search-ai
 
 Install dependencies:
 
 pip install -r requirements.txt
 
+---
 
+How to Run
 
-
-
-
-
-▶️ How to Run
-
-Run the application:
+Run the main Python script:
 
 python app.py
+
+Example Query:
+
+AI Engineer
 
 Example Output:
 
@@ -133,66 +78,56 @@ Top results:
 Python developer with AI experience
 Machine learning engineer
 
+---
 
+How Vector Search Works
 
+1. Resume text is converted into vector embeddings using Sentence Transformers.
+2. These embeddings represent semantic meaning of the text.
+3. The embeddings are stored in a FAISS vector index.
+4. When a query is entered, it is also converted into an embedding.
+5. FAISS calculates similarity between the query vector and stored vectors.
+6. The most similar resumes are returned as search results.
 
+This approach allows the system to find semantically similar resumes instead of relying only on keyword matching.
 
+---
 
+Example Use Cases
 
-📸 Demo Output
+- Resume filtering for recruiters
+- AI-based candidate search
+- Semantic document search
+- Knowledge base retrieval systems
 
-Example result of semantic search:
+---
 
-Query: AI Engineer
+Future Improvements
 
-Top Results:
-1. Python developer with AI experience
-2. Machine learning engineer
+- Add support for multiple resume files
+- Build a simple web interface
+- Add PDF resume parsing
+- Improve ranking with advanced embedding models
+- Deploy as a web application
 
-(Add a screenshot here if available)
+---
 
+Demo
 
+Example output screenshot:
 
+(Add screenshot here)
 
+---
 
+Conclusion
 
+This project demonstrates the fundamental concept of AI-powered semantic search using vector embeddings and FAISS. It provides a simple introduction to how modern AI systems retrieve information based on meaning rather than exact keyword matches.
 
-🚀 Future Improvements
+---
 
-Add support for real resume datasets
+Author
 
-Build a web interface for searching resumes
-
-Store vectors in a scalable vector database
-
-Add document upload support
-
-Improve ranking and filtering
-
-
-
-
-
-
-
-📚 Learning Outcome
-
-Through this project, I learned:
-
-Fundamentals of vector embeddings
-
-How semantic search systems work
-
-Using FAISS for vector similarity search
-
-Building a simple AI-powered search application in Python
-
-
-
-
-
-
-📌 Submission
-
-This project was created as part of the Endee AI Internship assignment and demonstrates the implementation of vector search concepts in a practical application.
-
+Dinesh S
+Computer Science Engineering Student
+ 
