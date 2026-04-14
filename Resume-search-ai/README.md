@@ -12,6 +12,8 @@ This project showcases the core concept used in modern AI search systems such as
 
 
 
+
+
 🎯 Features
 
 Convert text data into vector embeddings
@@ -23,6 +25,9 @@ Perform semantic similarity search
 Retrieve the most relevant results based on meaning instead of keywords
 
 Simple and lightweight implementation using Python
+
+
+
 
 
 
@@ -63,6 +68,9 @@ Even though the words are different, the meaning is similar, so it gets retrieve
 
 
 
+
+
+
 🛠️ Technologies Used
 
 Python
@@ -77,6 +85,8 @@ NumPy
 
 
 
+
+
 📂 Project Structure
 
 endee/
@@ -84,6 +94,9 @@ endee/
        app.py
        requirements.txt
        README.md
+
+
+
 
 
 
@@ -105,6 +118,9 @@ pip install -r requirements.txt
 
 
 
+
+
+
 ▶️ How to Run
 
 Run the application:
@@ -116,6 +132,9 @@ Example Output:
 Top results:
 Python developer with AI experience
 Machine learning engineer
+
+
+
 
 
 
@@ -134,6 +153,10 @@ Top Results:
 
 
 
+
+
+
+
 🚀 Future Improvements
 
 Add support for real resume datasets
@@ -149,6 +172,9 @@ Improve ranking and filtering
 
 
 
+
+
+
 📚 Learning Outcome
 
 Through this project, I learned:
@@ -160,6 +186,8 @@ How semantic search systems work
 Using FAISS for vector similarity search
 
 Building a simple AI-powered search application in Python
+
+
 
 
 
